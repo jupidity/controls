@@ -7,7 +7,15 @@
 class PIDController:
     def __init__(self, kp = 0.0, ki = 0.0, kd = 0.0, max_windup = 10):
         #TODO
-        pass
+        self.kp_ = kp
+        self.ki_ = ki
+        self.kd_ = kd
+
+        self.start_time_ = 0.0
+        self.error_sum_ = 0.0
+        self.last_timestamp_ = 0.0
+        self.last_error_ = 0.0
+        
     def reset(self):
         #TODO
         pass
@@ -35,5 +43,3 @@ class PIDController:
     def update(self, measured_value, timestamp):
         #TODO
         pass
-
-
