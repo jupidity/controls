@@ -1,3 +1,4 @@
+
 [![Udacity - Robotics NanoDegree Program](https://s3-us-west-1.amazonaws.com/udacity-robotics/Extra+Images/RoboND_flag.png)](https://www.udacity.com/robotics)
 
 # Table of Contents #
@@ -103,7 +104,7 @@ troubleshoot and tune positional control of your quad!
 $roslaunch quad_controller position_controller.launch
 ```
 
-### Step 2: Tuning Parameters ### 
+### Step 2: Tuning Parameters ###
 
 Tune parameters until the controller is well-behaved.
 This should not be a very familiar, albeit potentially more difficult problem.
@@ -112,7 +113,7 @@ This should not be a very familiar, albeit potentially more difficult problem.
 
 COMING SOON!
 
-### Step 4: Plotting and Scoring ### 
+### Step 4: Plotting and Scoring ###
 
 COMING SOON!
 
@@ -184,7 +185,7 @@ $ rosservice call /quad_rotor/set_pose "pose:
     x: 0.0
     y: 0.0
     z: 0.0
-    w: 0.0" 
+    w: 0.0"
 ```
 
 ### Plotting using `quad_plotter_node` ###
@@ -202,14 +203,14 @@ This might be useful to you while you are tuning the quad rotor in simulation.
  - `/quad_plotter/plot_one` - Plots a 2D path on a given plane (*plane selection coming soon!*)
  - `/quad_plotter/plot_3d` - Create a 3D plot depicting path in perspective
  - `/quad_plotter/plot_grid` - Create a grid plot, showing 4 different views
- 
+
 **Example: Capturing a Grid Plot**
 1. Load waypoints from the simulator (optional) `$ rosservice call /quad_plotter/load_waypoints_from_sim`
 2. Begin recording poses `$ rosservice call /quad_plotter/start_recording "{}"`
 3. Perform the behavior that you wish to capture in the simulator.
 4. Stop recording poses `$ rosservice call /quad_plotter/stop_recording "{}"`
 5. Generate the plot `$ rosservice call /quad_plotter/plot_gird "{}"`
-   
+
 After performing the above steps, a new timestamped PNG image should be generated and placed in the `/quad_controller/output_data` directory.
 
 # Using the Simulator #
